@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/png" href="/favicon.ico" /> -->
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AI Email Helper" />
+    <meta property="og:description" content="Summarise and reply to emails using AI directly in Outlook." />
+    <meta property="og:image" content="/android-chrome-512x512.png" />
+    <meta property="og:url" content="https://ai-email-helper.badev.tools/" />
+    <meta property="og:site_name" content="AI Email Helper" />
+    <meta name="msapplication-TileImage" content="/android-chrome-512x512.png" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#121212" />
+    <meta name="description" content="AI-powered email summarisation and drafting Helper for Microsoft Outlook." />
+    <title>AI Email Helper</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        background-color: #121212;
+        color: #ffffff;
+        line-height: 1.6;
+        padding: 2rem;
+      }
+      h1, h2 {
+        color: #ffffff;
+      }
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      h2 {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+      }
+      p, li {
+        font-size: 1rem;
+        color: #cccccc;
+      }
+      code {
+        background-color: #2a2a2a;
+        padding: 0.2rem 0.4rem;
+        border-radius: 4px;
+        color: #ffd700;
+      }
+      ul {
+        padding-left: 1.2rem;
+      }
+      a.button {
+        display: inline-block;
+        margin: 2rem 0;
+        padding: 0.75rem 1.5rem;
+        background-color: #646cff;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+      }
+      a.button:hover {
+        background-color: #535bf2;
+      }
+      a {
+        color: #64b5f6;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+      }
+      hr {
+        border: none;
+        border-top: 1px solid #444;
+        margin: 2rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>AI Email Helper</h1>
+      <p>This Outlook Add-in helps you summarise and draft replies to emails using OpenAI or Azure OpenAI APIs.</p>
+
+      <!-- <a class="button" href="/src/taskpane.html">Launch Task Pane</a> -->
+
+      <h2>📦 Installation</h2>
+      <p>You can install <strong>AI Email Helper</strong> directly from the Microsoft Outlook Add-ins Marketplace:</p>
+
+      <a class="button" href="https://appsource.microsoft.com/en-us/product/office/WA200008660" target="_blank">
+        Install from Outlook Add-ins Store
+      </a>
+
+      <p>Alternatively, for manual or developer installation:</p>
+      <ol>
+        <li>Open <a href="https://aka.ms/olksideload" target="_blank">https://aka.ms/olksideload</a></li>
+        <li>Go to <strong>My Add-ins</strong> in the left pane</li>
+        <li>Click on <strong>+ Add a custom add-in</strong> → <strong>Add from file</strong></li>
+        <li>Paste this manifest URL: <br />
+          <code>https://blockchainadvisors.github.io/ai-email-addin-pages/manifest-github-pages.xml</code>
+        </li>
+      </ol>
+
+      <h2>🏢 Enterprise Deployment</h2>
+      <p>
+        For enterprise volume licensing, centralized deployment, or white-label versions of this add-in, please contact:
+        <br />
+        📧 <a href="mailto:office@blockchainadvisors.ltd">office@blockchainadvisors.ltd</a>
+      </p>
+
+      <h2>🚀 Usage</h2>
+      <ol>
+        <li>Open an email</li>
+        <li>Go to the <strong>Apps</strong> tab and search for <code>AI Email Helper</code></li>
+        <li>Right-click it and select <strong>Pin</strong> for easier access</li>
+        <li>Click the <strong>AI Email Helper</strong> button in the Ribbon under Apps</li>
+        <li>The task pane opens to the right</li>
+        <li>Configure your <strong>API key, Provider, Model, Base URL</strong> (if needed)</li>
+        <li>Click <strong>Summarise</strong> or <strong>Draft Reply</strong> or <strong>Fine-tune Reply</strong> to use the Helper</li>
+      </ol>
+
+      <h2>📝 Notes</h2>
+      <ul>
+        <li>You need to be in <strong>Compose</strong> mode to insert the drafted reply into the message body.</li>
+        <li>When in Compose mode, <strong>click into the body</strong> of the last email message so the Helper can access its text.</li>
+      </ul>
+
+      <hr />
+
+      <p style="text-align:center; font-size: 0.9rem; color: #777;">
+        &copy; 2025 AI Email Helper. All rights reserved. | 
+        <a href="/privacy-cookies-terms.html" style="color:#bbb;">Privacy, Cookies & Terms</a>
+      </p>
+        </div>
+  </body>
+</html>
